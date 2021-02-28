@@ -57,7 +57,7 @@ const useStyles = makeStyles(() => ({
   }
 }));
 
-export default function ScrollableTabsButtonForce({ account }) {
+export default function ScrollableTabsButtonForce({ account, contract }) {
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
 
@@ -86,7 +86,7 @@ export default function ScrollableTabsButtonForce({ account }) {
         <Dashboard account={account} />
       </TabPanel>
       <TabPanel value={value} index={1}>
-        <Loan />
+        <Loan contract={contract} />
       </TabPanel>
     </div>
   );

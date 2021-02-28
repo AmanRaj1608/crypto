@@ -78,7 +78,7 @@ const Dashboard = ({ account }) => {
     <React.Fragment>
       <Avatar alt="Img" src={tileData[0]?.logo_url} className={classes.large} />
       <Typography variant="div" className={classes.assetSubTitle}> {account} </Typography>
-      <Typography variant="h6" className={classes.credText} >Credit Score - {Math.floor(Math.random() * (1000 - 50) + 50)}</Typography>
+      <Typography variant="h6" className={classes.credText} >Credit Score - {Math.floor(Math.random() * (1000 - 500) + 500)}</Typography>
       <Grid
         container
         direction="row"

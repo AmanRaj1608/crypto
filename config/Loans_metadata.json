@@ -1,0 +1,154 @@
+{
+	"compiler": {
+		"version": "0.8.1+commit.df193b15"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_credit",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "borrower",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "borrowFromPools",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "poolNumber",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "lender",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "lendIntoPools",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "borrower",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "poolNumber",
+						"type": "uint256"
+					}
+				],
+				"name": "paybackTheLendingAmount",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"browser/contracts/Loans.sol": "Loans"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"browser/contracts/HighReturnRisk.sol": {
+			"keccak256": "0xe82fd97bca3c149ec859bb57062919032319a90a764cf330ad255bc2c5727582",
+			"urls": [
+				"bzz-raw://77742f973f0ba1de69f2f9d53e0ecabc62b1a11b28fb2ed4c21ccae4ee5610b4",
+				"dweb:/ipfs/QmU4XfVaDLr2SAiXvvs4Dig98wFrX9SV6kuLwaBrKfEwr9"
+			]
+		},
+		"browser/contracts/Loans.sol": {
+			"keccak256": "0xa499163787a1b00638373383170bd6de796a9952f90428447b25b3227eb0e966",
+			"urls": [
+				"bzz-raw://7c9b5667afdc4fc275a6a590e6f09bcdb71613743e6e5885222892840db25c27",
+				"dweb:/ipfs/QmeMoHrtkANJAMrXsmdLmrdTqbPAncszxATxrC4d4Y3Qe7"
+			]
+		},
+		"browser/contracts/LowReturnRisk.sol": {
+			"keccak256": "0x82d0576520ebf64cfdd73a858a446eeb1da87461924b03038bbabc65dfa11a3c",
+			"urls": [
+				"bzz-raw://77191eb020dc2d50360102678a6d7c9ee5e8aa154b83b03c3b2f83d49318597c",
+				"dweb:/ipfs/QmXKzbJgMmk3hRFzXJVbPzEVN7SLiYbeuH17UhDt1Kqm63"
+			]
+		},
+		"browser/contracts/MediumReturnRisk.sol": {
+			"keccak256": "0x908c5aa59538e1feff2ce3a1066b61c844a6e0eccc4b1cf729add91578061231",
+			"urls": [
+				"bzz-raw://6598294e2552c283092238105e082de105d627e77afe8017ee4785ed8709a8bd",
+				"dweb:/ipfs/QmPH4eEVjaXfdLZkMJrFQfvAqEHHNekDRPh7gbQYhC4f93"
+			]
+		}
+	},
+	"version": 1
+}

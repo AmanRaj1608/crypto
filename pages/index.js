@@ -7,6 +7,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Appbar from '../components/Appbar';
 import Tabs from '../components/Tabs';
 
+import { abi } from '../config/LowReturnRisk'
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -47,7 +48,7 @@ export default function Index() {
       const web3 = new Web3(portis.provider);
       await web3.eth.net.getNetworkType();
       const accounts = await web3.eth.getAccounts();
-      // const contractObj = new web3.eth.Contract(abi, addr);
+      // const contractObj = new web3.eth.Contract(abi, "0xf0973f895af204f3d7dd1852936a5cf49aa0b2aafe543cab2ad91df46b40e0a0");
       // setContract(contractObj);
       if (accounts) {
         // setAccount(accounts[0]);
@@ -72,7 +73,7 @@ export default function Index() {
     <React.Fragment>
       <Appbar setAccount={setAccount} />
       <main style={{ maxWidth: 1100, margin: 'auto', background: '#FFFFFF', textAlign: 'center' }}>
-        <Tabs account={account} />
+        <Tabs account={account} contract={contract} />
       </main>
     </React.Fragment>
   );
